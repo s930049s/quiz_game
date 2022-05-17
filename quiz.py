@@ -1,5 +1,9 @@
 import random
-num = random.randint(1, 100)
+
+user_random_min = int(input("最小數: "))
+user_random_max = int(input("最大數: "))
+
+num = random.randint(user_random_min, user_random_max)
 count = 0
 while True:
     num_guess = int(input("輸入一個數字: "))
